@@ -54,6 +54,13 @@ section input {
     box-sizing: border-box;
 }
 
+section div.butaos {
+    display: flex;
+    align-items: center;
+
+
+}
+
 /* Estiliza os botões dentro das seções */
 section button {
     padding: 0.8rem 1.2rem;
@@ -63,6 +70,8 @@ section button {
     color: #F5F7F8;
     font-size: 1rem;
     cursor: pointer;
+    margin: 1rem;
+
 }
 
 /* Adiciona efeito hover ao botão de pesquisa */
@@ -74,7 +83,7 @@ section button:hover {
 /* Estiliza a caixa de resultados da pesquisa */
 .resultados-pesquisa {
     width: 60rem;
-    height: 46vh;
+    height: 56vh;
     overflow-y: auto;
     margin-top: 1rem;
     padding: 1rem;
@@ -114,6 +123,31 @@ section button:hover {
 
 .item-resultado a:hover {
     text-decoration: underline;
+}
+
+
+.item-resultado2 {
+    display: flex;
+    align-items: center;
+    background: #c2c0c0da;
+    border-radius: 0.6rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.item-resultado2 img {
+    height: 200px;
+    width: 200px;
+    border-radius: 0.6rem;
+    margin-right: 16px;
+}
+
+/* Estiliza os títulos dentro dos itens de resultado */
+.item-resultado2 h2 {
+    font-size: 1.5rem;
+    color: #0f5aa5;
+    margin: 0;
 }
 
 /* Estiliza a descrição meta dentro dos itens de resultado */
@@ -169,6 +203,18 @@ footer {
         margin-bottom: 1rem;
     }
 
+    .item-resultado2 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .item-resultado2 img {
+        height: 150px;
+        width: 150px;
+        margin-bottom: 1rem;
+    }
+
     section input {
         width: 90%;
     }
@@ -184,6 +230,10 @@ footer {
     }
 
     .item-resultado h2 {
+        font-size: 1.1rem;
+    }
+
+    .item-resultado2 h2 {
         font-size: 1.1rem;
     }
 

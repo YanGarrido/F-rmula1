@@ -4,16 +4,16 @@ function pesquisar() {
 
   let campoPesquisa = document.getElementById("campo-pesquisa").value
 
-  if(!campoPesquisa){
+  if (!campoPesquisa) {
     section.innerHTML = "Nada foi encontrado. Você precisa digitar o nome de um atleta ou esporte"
     return
-}
-campoPesquisa = campoPesquisa.toLowerCase()
+  }
+  campoPesquisa = campoPesquisa.toLowerCase()
   // Inicializa uma string vazia para armazenar os resultados
   let resultados = "";
   let título = "";
-  let descricao ="";
-  let tags="";
+  let descricao = "";
+  let tags = "";
 
   // Itera sobre cada dado da lista de dados
   for (let dado of dados) {
@@ -35,10 +35,37 @@ campoPesquisa = campoPesquisa.toLowerCase()
     }
 
   }
-  if(!resultados){
-    resultados ="Nada foi encontrado!"
+  if (!resultados) {
+    resultados = "Nada foi encontrado!"
   }
 
   // Atribui os resultados gerados à seção HTML
   section.innerHTML = resultados;
+
+
+}
+
+function equipes() {
+  let section = document.getElementById("resultados-pesquisa");
+
+  let resultados = "";
+
+  for (let dado of equipe) {
+
+    resultados += `
+      <div class="teste2">
+       <div class="item-resultado2">
+        <img src="${dado.imagem}" alt="${dado.titulo}">
+         <div class="item-texto2">
+            <h2>${dado.titulo}</h2>
+            <p class="descricao-meta">${dado.descricao}</p>
+          </div>
+            
+       </div> 
+      </div>
+    `;
+  }
+
+  section.innerHTML = resultados;
+
 }
