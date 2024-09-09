@@ -1,4 +1,5 @@
-# Projeto: Fórmula 1 - Pilotos
+# Projeto Imersão Alura Germini 
+##Fórmula 1 - Pilotos e Equipes
 
 Este projeto é uma página web interativa que exibe informações sobre pilotos de Fórmula 1. O site permite que os usuários pesquisem pilotos e visualizem detalhes como nome, descrição, e um link para o Instagram do piloto. Além disso, o design da página é responsivo e moderno, utilizando Flexbox e outras técnicas de layout.
 
