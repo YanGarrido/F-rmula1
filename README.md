@@ -30,7 +30,7 @@ O site também possui outros arquivos:
 - **HTML5**: Para a estrutura da página.
 - **CSS3**: Para o estilo da página e o design responsivo, utilizando técnicas como Flexbox.
 - **JavaScript**: Para a interação e manipulação dinâmica de dados, além da exibição de resultados da pesquisa.
-- 
+  
 ## Como Executar o Projeto
 
 1. Clone o repositório:
