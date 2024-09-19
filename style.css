@@ -18,12 +18,12 @@ body {
 }
 
 .container {
-  max-width: 1080px;
   margin: 0 auto;
   margin-left: 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
+
 
 }
 
@@ -36,8 +36,8 @@ header {
 }
 
 .titulo {
-  width: 25%;
   cursor: pointer;
+  width: 25%;
 
 }
 
@@ -49,7 +49,10 @@ header {
 
 .menu {
   width: 50%;
+  display: flex;
+  justify-content: center;
 }
+
 
 .menu nav a {
   color: white;
@@ -93,8 +96,9 @@ footer span a {
   padding: 20px;
   margin: 10px;
   width: 500px;
-  height: 550px;
+  height: auto;
   border-radius: 0.6rem;
+  flex-grow: 1;
 }
 
 .historia h2 {
@@ -109,16 +113,17 @@ footer span a {
   font-size: 1rem;
   text-align: justify;
   margin-bottom: 10px;
-  
+  padding: 10px;
+
 }
 
 .calendario {
   border-radius: 0.6rem;
-  background-color: #1f262e;
   padding: 10px;
   margin: 10px;
   max-height: 550px;
-
+  border: 1px solid #ffffff;
+  flex-grow: 1;
 
 }
 
@@ -132,11 +137,11 @@ footer span a {
   margin-top: 10px;
   max-height: 450px;
   overflow-y: scroll;
-  
+
 }
 
 .corridas {
-  background: linear-gradient(to right, #9A0101,#bd5500);
+  background: linear-gradient(to right, #9A0101, #bd5500);
   display: flex;
   align-items: center;
   padding: 10px;
@@ -149,6 +154,7 @@ footer span a {
   width: 50px;
   margin-right: 10px;
 }
+
 .corridas h3 {
   color: #ffffff;
 }
@@ -272,7 +278,7 @@ footer span a {
   text-decoration: underline;
 }
 
-.section-circuits{
+.section-circuits {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -284,6 +290,7 @@ footer span a {
 .main-teams h1 {
   color: #ffffff;
   font-size: 3rem;
+  margin-bottom: 10px;
 }
 
 .main-teams section {
@@ -292,24 +299,31 @@ footer span a {
   align-items: center;
   margin-bottom: 3rem;
 }
-.main-teams img{
+
+.main-teams img {
   width: 200px;
   height: 200px;
+  border-radius: 0.6rem;
 }
-.teams{
+
+.teams {
   background-color: #1f262e;
   margin: 10px;
   display: flex;
   align-items: center;
   max-width: 800px;
+  border-radius: 0.6rem;
+
 
 }
-.teams .img-title{
+
+.teams .img-title {
   margin: 10px;
   text-align: center;
   color: #ffffff;
 }
-.teams .item-texto{
+
+.teams .item-texto {
   color: #ffffff;
   font-size: 1.5rem;
   text-align: justify;
@@ -326,21 +340,23 @@ footer span a {
 }
 
 .container-circuits {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
+  display: flex;
+  flex-direction: column;
   align-items: center;
   color: #ffffff;
+
 }
 
 .circuit {
   display: flex;
   align-items: center;
   margin: 1rem;
-  background: linear-gradient(to right, #9A0101,#bd5500);
-  width: 1000px;
+  background: linear-gradient(to right, #9A0101, #bd5500);
+  width: 1fr;
   border-radius: 0.6rem;
-  
+
 }
+
 .circuit .img-title {
   display: flex;
   flex-direction: column;
@@ -362,7 +378,7 @@ footer span a {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   margin: 10px;
-  width: 550px;
+  width: 100vh;
   background-color: #1f262e;
   padding: 1rem;
   border-radius: 0.6rem;
@@ -386,5 +402,139 @@ footer span a {
   grid-column: 2/4;
 }
 
+/*Reponsividade */
 
+@media (max-width:1024px) {
 
+  /*Header/footer e Home page*/
+  header {
+    background-color: #9A0101;
+    width: 100%;
+    padding: 10px;
+    top: 0;
+    position: fixed;
+
+  }
+
+  .container {
+    margin: 0 auto;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .titulo {
+    width: 50%;
+    text-align: center;
+  }
+
+  .menu {
+    width: 100vh;
+  }
+
+  .menu nav a {
+    padding: 20px;
+  }
+
+  .menu nav a:hover {
+    color: #070707;
+  }
+
+  .historia h2 {
+    text-align: center;
+  }
+
+  .calendario h2 {
+    text-align: center;
+    margin: 0;
+  }
+
+  /*Teams page*/
+
+  .main-teams h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .main-teams img {
+    width: 150px;
+    height: 150px;
+
+  }
+
+  .teams {
+    flex-direction: column;
+  }
+
+  /*Reponsividade Circuits Page*/
+  .section-circuits h1 {
+    text-align: center;
+    font-size: 2rem;
+
+  }
+
+  .circuit {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+  }
+
+  .circuit div.info {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+}
+
+/*Responsividade Drivers Page*/
+@media (max-width: 768px) {
+  .main-drivers h1 {
+    font-size: 2rem;
+    letter-spacing: 0.2rem;
+  }
+
+  .main-drivers section input {
+    width: 20rem;
+    padding: 0.8rem;
+  }
+
+  .resultados-pesquisa {
+    width: 40rem;
+    height: 40vh;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .item-resultado {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .item-resultado img {
+    height: 150px;
+    width: 150px;
+    margin-bottom: 1rem;
+  }
+
+  .resultados-pesquisa {
+    width: 100%;
+    height: auto;
+  }
+
+  .item-resultado h2 {
+    font-size: 1.1rem;
+  }
+
+  .descricao-meta {
+    font-size: 0.9rem;
+  }
+
+}
