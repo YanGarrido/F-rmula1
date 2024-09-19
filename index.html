@@ -2,41 +2,121 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Fórmula 1</title>
+  <script src="https://kit.fontawesome.com/137f7053a7.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F1 informations</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header>
-        <h1>Informações da Fórmula 1 </h1>
-    </header>
-    <main>
-        <section>
-            <input type="text" placeholder="Digite o nome do piloto ou equipe" id="campo-pesquisa">
-            <div class="butaos">
-                <div class="butao">
-                    <button onclick="pesquisar()">Pesquisar</button>
-                </div>
-                <div class="butao">
-                    <button onclick="equipes()">Equipes</button>
-                </div>
+  <header>
+    <div class="container">
+      <div class="titulo">
+        <p>Formula 1</p>
+      </div>
+      <div class="menu">
+        <nav>
+          <a href="/index.html">home</a>
+          <a href="/drivers.html">drivers</a>
+          <a href="/teams.html">teams</a>
+          <a href="/circuits.html">circuits</a>
+        </nav>
+  </header>
+  <main>
+    <section class="container-home">
+      <div class="historia">
+        <h2>Formula 1 history</h2>
+        <p>A Fórmula 1, criada em 1950, é a principal categoria de automobilismo do mundo. Organizada pela Federação
+          Internacional de Automobilismo (FIA), surgiu como uma competição entre equipes e pilotos para definir o mais
+          rápido e habilidoso no esporte a motor. O primeiro campeonato foi vencido por Giuseppe Farina, da Alfa Romeo,
+          e desde então, a F1 tornou-se uma vitrine para inovações tecnológicas e talentos excepcionais.</p>
+        <p>Ao longo das décadas, a Fórmula 1 evoluiu com mudanças constantes nas regras, tanto para aumentar a segurança
+          quanto para estimular a competição. Lendas como Juan Manuel Fangio, Ayrton Senna, Michael Schumacher e Lewis
+          Hamilton marcaram a história, cada um dominando sua era com talento e carisma. As equipes, como Ferrari,
+          McLaren, Mercedes e Red Bull, também desempenham um papel crucial, investindo em engenharia avançada e
+          estratégias complexas.</p>
+        <p>A F1 é mais que um esporte: é um espetáculo global que combina alta tecnologia, velocidade e estratégia,
+          atraindo milhões de fãs ao redor do mundo e mantendo-se como o ápice do automobilismo.</p>
+      </div>
+      <div class="calendario">
+        <h2>Calendar</h2>
+        <div class="calendario-corridas">
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/azerbaijan-flag.png"
+              alt="">
+            <h3>FORMULA 1 QATAR AIRWAYS AZERBAIJAN GRAND PRIX 2024</h3>
 
-            </div>
+          </div>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/singapore-flag.png"
+              alt="">
+            <h3>FORMULA 1 SINGAPORE AIRLINES SINGAPORE GRAND PRIX 2024</h3>
 
+          </div>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-states-flag.png"
+              alt="">
+            <h3>FORMULA 1 PIRELLI UNITED STATES GRAND PRIX 2024</h3>
 
-        </section>
-        <section class="resultados-pesquisa" id="resultados-pesquisa">
-        </section>
+          </div>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/mexico-flag.png"
+              alt="">
+            <h3>FORMULA 1 GRAN PREMIO DE LA CIUDAD DE MÉXICO 2024</h3>
+          </div>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/brazil-flag.png"
+              alt="">
+            <h3>FORMULA 1 LENOVO GRANDE PRÊMIO DE SÃO PAULO 2024</h3>
+          </div>
 
-    </main>
-    <footer>
-        <p>2024 - Formula 1. Todos os direitos reservados</p>
-        <p>Feito por Yan Garrido</p>
-    </footer>
-    <script src="dados.js"></script>
-    <script src="app.js"></script>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-states-flag.png"
+              alt="">
+            <h3>FORMULA 1 HEINEKEN SILVER LAS VEGAS GRAND PRIX 2024</h3>
+          </div>
+
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/qatar-flag.png"
+              alt="">
+            <h3>FORMULA 1 QATAR AIRWAYS QATAR GRAND PRIX 2024</h3>
+
+          </div>
+          <div class="corridas">
+            <img
+              src="https://media.formula1.com/content/dam/fom-website/2018-redesign-assets/Flags%2016x9/united-arab-emirates-flag.png"
+              alt="">
+            <h3>FORMULA 1 ETIHAD AIRWAYS ABU DHABI GRAND PRIX 2024
+            </h3>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    
+      
+
+    
+  </main>
+  <footer>
+    <p>Formula 1 - Todos os direitos reservados - 2024</p>
+    <p>Feito por Yan Garrido
+      <span>
+        <a href="https://www.linkedin.com/in/yan-garrido-5b2b19327/" target="_blank"><i
+            class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/YanGarrido" target="_blank"><i class="fa-brands fa-github"></i></a>
+      </span>
+    </p>
+  </footer>
+  <script src="app.js"></script>
 </body>
 
 </html>

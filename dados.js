@@ -210,6 +210,322 @@ let equipe = [
   {
     imagem: "https://media.formula1.com/image/upload/f_auto,c_limit,q_75,w_1320/content/dam/fom-website/2018-redesign-assets/team%20logos/williams",
     titulo: "Williams Racing",
-    descricao: "Williams é uma das equipes mais históricas da Fórmula 1, tendo conquistado diversos títulos mundiais nos anos 80 e 90. A equipe enfrenta desafios para voltar ao topo do grid. Os atuais pilotos são Alexander Albon e Logan Sargeant."
+    descricao: "Williams é uma das equipes mais históricas da Fórmula 1, tendo conquistado diversos títulos mundiais nos anos 80 e 90. A equipe enfrenta desafios para voltar ao topo do grid. Os atuais pilotos são Alexander Albon e Franco Colapinto."
   }
 ];
+
+//DATAS PAGE CIRCUITS//
+const circuits = [
+  {
+    name: "Bahrain",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Bahrain%20carbon",
+    firstGrandPrix: 2004,
+    numberOfLaps: 57,
+    raceDistance: "308.238 km",
+    circuitLength: "5.412 km",
+    lapRecord: {
+      time: "1:31.447",
+      holder: "Pedro de la Rosa",
+      year: 2005
+    }
+  },
+  {
+    name: "Saudi Arabian",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Saudi%20Arabia%20carbon",
+    firstGrandPrix: 2021,
+    numberOfLaps: 50,
+    raceDistance: "308.45 km",
+    circuitLength: "6.174 km",
+    lapRecord: {
+      time: "1:30.734",
+      holder: "Lewis Hamilton",
+      year: 2021
+    }
+  },
+  {
+    name: "Australia",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Australia%20carbon",
+    firstGrandPrix: 1996,
+    numberOfLaps: 58,
+    raceDistance: "306.124 km",
+    circuitLength: "5.278 km",
+    lapRecord: {
+      time: "1:19.813",
+      holder: "Charles Leclerc",
+      year: 2024
+    }
+  },
+  {
+    name: "Japan",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Japan%20carbon",
+    firstGrandPrix: 1987,
+    numberOfLaps: 53,
+    raceDistance: "307.471 km",
+    circuitLength: "5.807 km",
+    lapRecord: {
+      time: "1:30.983",
+      holder: "Lewis Hamilton",
+      year: 2019
+    }
+  },
+  {
+    name: "China",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/China%20carbon",
+    firstGrandPrix: 2004,
+    numberOfLaps: 56,
+    raceDistance: "305.066 km",
+    circuitLength: "5.451 km",
+    lapRecord: {
+      time: "1:32.238",
+      holder: "Michael Schumacher",
+      year: 2004
+    }
+  },
+  {
+    name: "Miami",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Miami%20carbon",
+    firstGrandPrix: 2022,
+    numberOfLaps: 57,
+    raceDistance: "308.326 km",
+    circuitLength: "5.412 km",
+    lapRecord: {
+      time: "1:29.708",
+      holder: "Max Verstappen",
+      year: 2023
+    }
+  },
+  {
+    name: "Emilia-Romagna",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Emilia%20Romagna%20carbon",
+    firstGrandPrix: 1980,
+    numberOfLaps: 63,
+    raceDistance: "309.049 km",
+    circuitLength: "4.909 km",
+    lapRecord: {
+      time: "1:15.484",
+      holder: "Lewis Hamilton",
+      year: 2020
+    }
+  },
+  {
+    name: "Monaco",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1200,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Monte%20Carlo%20carbon",
+    firstGrandPrix: 1950,
+    numberOfLaps: 78,
+    raceDistance: "260.286 km",
+    circuitLength: "3.337 km",
+    lapRecord: {
+      time: "1:12.909",
+      holder: "Lewis Hamilton",
+      year: 2021
+    }
+  },
+  {
+    name: "Canada",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Canada%20carbon",
+    firstGrandPrix: 1978,
+    numberOfLaps: 70,
+    raceDistance: "305.27 km",
+    circuitLength: "4.361 km",
+    lapRecord: {
+      time: "1:13.078",
+      holder: "Valtteri Bottas",
+      year: 2019
+    }
+  },
+  {
+    name: "Spain",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Spain%20carbon",
+    firstGrandPrix: 1991,
+    numberOfLaps: 66,
+    raceDistance: "307.236 km",
+    circuitLength: "4.657 km",
+    lapRecord: {
+      time: "1:16.330",
+      holder: "Max Verstappen",
+      year: 2023
+    }
+  },
+  {
+    name: "Austria",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Austria%20carbon",
+    firstGrandPrix: 1970,
+    numberOfLaps: 71,
+    raceDistance: "306.452 km",
+    circuitLength: "4.318 km",
+    lapRecord: {
+      time: "1:05.619",
+      holder: "Carlos Sainz",
+      year: 2020
+    }
+  },
+  {
+    name: "Great Britain",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Austria%20carbon",
+    firstGrandPrix: 1950,
+    numberOfLaps: 52,
+    raceDistance: "306.198 km",
+    circuitLength: "5.891 km",
+    lapRecord: {
+      time: "1:27.097",
+      holder: "Max Verstappen",
+      year: 2020
+    }
+  },
+  {
+    name: "Hungary",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Hungar%20carbon",
+    firstGrandPrix: 1986,
+    numberOfLaps: 70,
+    raceDistance: "306.63 km",
+    circuitLength: "4.381 km",
+    lapRecord: {
+      time: "1:16.627",
+      holder: "Lewis Hamilton",
+      year: 2020
+    }
+  },
+  {
+    name: "Belgium",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Belgium%20carbon",
+    firstGrandPrix: 1950,
+    numberOfLaps: 44,
+    raceDistance: "308.052 km",
+    circuitLength: "7.004 km",
+    lapRecord: {
+      time: "1:44.701",
+      holder: "Sergio Perez",
+      year: 2024
+    }
+  },
+  {
+    name: "Netherlands",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Netherlands%20carbon",
+    firstGrandPrix: 1952,
+    numberOfLaps: 72,
+    raceDistance: "306.587 km",
+    circuitLength: "4.259 km",
+    lapRecord: {
+      time: "1:11.097",
+      holder: "Lewis Hamilton",
+      year: 2021
+    }
+  },
+  {
+    name: "Italy",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Italy%20carbon",
+    firstGrandPrix: 1950,
+    numberOfLaps: 53,
+    raceDistance: "306.72 km",
+    circuitLength: "5.793 km",
+    lapRecord: {
+      time: "1:21.046",
+      holder: "Rubens Barrichello",
+      year: 2004
+    }
+  },
+  {
+    name: "Azerbaijan",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Azerbaijan%20carbon",
+    firstGrandPrix: 2016,
+    numberOfLaps: 51,
+    raceDistance: "306.049 km",
+    circuitLength: "6.003 km",
+    lapRecord: {
+      time: "1:43.009",
+      holder: "Charles Leclerc",
+      year: 2019
+    }
+  },
+  {
+    name: "Singapore",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Singapore%20carbon",
+    firstGrandPrix: 2008,
+    numberOfLaps: 62,
+    raceDistance: "306.143 km",
+    circuitLength: "4.94 km",
+    lapRecord: {
+      time: "1:35.867",
+      holder: "Lewis Hamilton",
+      year: 2023
+    }
+  },
+  {
+    name: "United States",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/USA%20carbon",
+    firstGrandPrix: 2012,
+    numberOfLaps: 56,
+    raceDistance: "308.405 km",
+    circuitLength: "5.513 km",
+    lapRecord: {
+      time: "1:36.169",
+      holder: "Charles Lerclerc",
+      year: 2019
+    }
+  },
+  {
+    name: "Mexico",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Mexico%20carbon",
+    firstGrandPrix: 1963,
+    numberOfLaps: 71,
+    raceDistance: "305.354 km",
+    circuitLength: "4.304 km",
+    lapRecord: {
+      time: "1:17.774",
+      holder: "Valtteri Bottas",
+      year: 2021
+    }
+  },
+  {
+    name: "Brasil",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Brazil%20carbon",
+    firstGrandPrix: 1973,
+    numberOfLaps: 71,
+    raceDistance: "305.879 km",
+    circuitLength: "4.309 km",
+    lapRecord: {
+      time: "1:10.540",
+      holder: "Valtteri Bottas",
+      year: 2018
+    }
+  },
+  {
+    name: "Las Vegas",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Las%20Vegas%20carbon",
+    firstGrandPrix: 2023,
+    numberOfLaps: 50,
+    raceDistance: "309.958 km",
+    circuitLength: "6.201 km",
+    lapRecord: {
+      time: "1:35.490",
+      holder: "Oscar Piastri",
+      year: 2023
+    }
+  },
+  {
+    name: "Qatar",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Qatar%20carbon",
+    firstGrandPrix: 2021,
+    numberOfLaps: 57,
+    raceDistance: "308.611 km",
+    circuitLength: "5.419 km",
+    lapRecord: {
+      time: "1:24.319",
+      holder: "Max Verstappen",
+      year: 2023
+    }
+  },
+  {
+    name: "Abu Dhabi",
+    img: "https://media.formula1.com/image/upload/f_auto,c_limit,w_1440,q_auto/f_auto/q_auto/content/dam/fom-website/2018-redesign-assets/Track%20icons%204x3/Abu%20Dhab%20carbon",
+    firstGrandPrix: 2009,
+    numberOfLaps: 58,
+    raceDistance: "306.183 km",
+    circuitLength: "5.281 km",
+    lapRecord: {
+      time: "1:26.103",
+      holder: "Max Verstappen",
+      year: 2021
+    }
+  },
+]

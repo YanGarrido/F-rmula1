@@ -1,248 +1,390 @@
-/* Importa a fonte Chakra Petch do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap');
 
-/* Estiliza o corpo da página */
-html,
+/*COMMUN CSS FOR ALL PAGES*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Chakra Petch", sans-serif;
+}
+
 body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    font-family: "Chakra Petch", sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(214, 214, 214);
-    background-image: url(F1-Logo.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 500px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  background-color: rgb(7, 7, 7);
+  margin-top: 100px;
 }
 
-main {
-    flex-grow: 1;
-    /* Garante que o main ocupe o espaço disponível */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Estiliza os títulos h1 */
-h1 {
-    font-size: 2.5rem;
-    color: #051329;
-    text-align: center;
-    letter-spacing: 0.4rem;
-}
-
-/* Estiliza as seções da página */
-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 3rem;
-}
-
-/* Estiliza os inputs dentro das seções */
-section input {
-    width: 30rem;
-    border: none;
-    padding: 1rem;
-    border-radius: 1.5rem;
-    margin-bottom: 1rem;
-    color: #45474B;
-    font-size: 1rem;
-    box-sizing: border-box;
-}
-
-section div.butaos {
-    display: flex;
-    align-items: center;
-
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 
 }
 
-/* Estiliza os botões dentro das seções */
-section button {
-    padding: 0.8rem 1.2rem;
-    border: none;
-    border-radius: 1.5rem;
-    background-color: #0e1f30;
-    color: #F5F7F8;
-    font-size: 1rem;
-    cursor: pointer;
-    margin: 1rem;
+header {
+  background-color: #9A0101;
+  width: 100%;
+  padding: 10px;
+  top: 0;
+  position: fixed;
+}
+
+.titulo {
+  width: 25%;
+  cursor: pointer;
 
 }
 
-/* Adiciona efeito hover ao botão de pesquisa */
-section button:hover {
-    background-color: #30475E;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+.titulo p {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-/* Estiliza a caixa de resultados da pesquisa */
+.menu {
+  width: 50%;
+}
+
+.menu nav a {
+  color: white;
+  text-decoration: none;
+  padding-right: 50px;
+  font-size: 18px;
+  position: relative;
+}
+
+.menu nav a:hover {
+  font-size: 20px;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #070707;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  width: 100%;
+  font-size: 1rem;
+  margin-top: auto;
+  /* Garante que o rodapé fique no final */
+}
+
+footer span a {
+  color: #ffffff;
+}
+
+/*HOME PAGE*/
+
+.container-home {
+  display: flex;
+  column-gap: 10px;
+  flex-grow: 1;
+  flex-wrap: wrap;
+}
+
+.historia {
+  background-color: #1f262e;
+  padding: 20px;
+  margin: 10px;
+  width: 500px;
+  height: 550px;
+  border-radius: 0.6rem;
+}
+
+.historia h2 {
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 20px;
+
+}
+
+.historia p {
+  color: white;
+  font-size: 1rem;
+  text-align: justify;
+  margin-bottom: 10px;
+  
+}
+
+.calendario {
+  border-radius: 0.6rem;
+  background-color: #1f262e;
+  padding: 10px;
+  margin: 10px;
+  max-height: 550px;
+
+
+}
+
+.calendario h2 {
+  font-size: 2rem;
+  color: white;
+  margin-left: 20px;
+}
+
+.calendario-corridas {
+  margin-top: 10px;
+  max-height: 450px;
+  overflow-y: scroll;
+  
+}
+
+.corridas {
+  background: linear-gradient(to right, #9A0101,#bd5500);
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 0.6rem;
+}
+
+.corridas img {
+  height: 30px;
+  width: 50px;
+  margin-right: 10px;
+}
+.corridas h3 {
+  color: #ffffff;
+}
+
+/*DRIVERS PAGE*/
+
+.body-drivers {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Chakra Petch", sans-serif;
+  display: flex;
+  flex-direction: column;
+  background-color: #070707;
+  background-image: url(F1-Logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 500px;
+  margin-top: 50px;
+}
+
+.main-drivers {
+  flex-grow: 1;
+  /* Garante que o main ocupe o espaço disponível */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-drivers h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  letter-spacing: 0.4rem;
+  margin-top: 50px;
+  margin-bottom: 20px;
+
+}
+
+.main-drivers section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.main-drivers section input {
+  width: 30rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 1.5rem;
+  margin-bottom: 1rem;
+  color: #9A0101;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.main-drivers section button {
+  padding: 0.8rem 1.2rem;
+  border: none;
+  border-radius: 1.5rem;
+  background-color: #9A0101;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 1rem;
+}
+
+.main-drivers section button:hover {
+  background-color: #30475E;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/*ESTILO DA CAIXA DOS RESULTADOS DA PESQUISA*/
 .resultados-pesquisa {
-    width: 60rem;
-    height: 56vh;
-    overflow-y: auto;
-    margin-top: 1rem;
-    padding: 1rem;
-    border-radius: 0.6rem;
+  width: 60rem;
+  height: 56vh;
+  overflow-y: auto;
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 0.6rem;
 }
 
-/* Estiliza cada item de resultado */
+/*ESTILIZAÇÃO DOS ITENS DO RESULTADO*/
 .item-resultado {
-    display: flex;
-    align-items: center;
-    background: #c2c0c0da;
-    border-radius: 0.6rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  background-color: #ffffffb0;
+  border-radius: 0.6rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .item-resultado img {
-    height: 200px;
-    width: 200px;
-    margin-right: 1rem;
-    border-radius: 0.6rem;
+  height: 200px;
+  width: 200px;
+  margin-right: 1rem;
+  border-radius: 0.6rem;
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
 .item-resultado h2 {
-    font-size: 1.5rem;
-    color: #0f5aa5;
-    margin: 0;
+  font-size: 2rem;
+  color: rgb(7, 7, 7);
+  margin: 0;
 }
 
-/* Estiliza os links dentro dos itens de resultado */
+.item-resultado p {
+  text-align: justify;
+  font-size: 1rem;
+}
+
 .item-resultado a {
-    text-decoration: none;
-    color: #156fc9;
+  text-decoration: none;
+  color: #9A0101;
 }
 
 .item-resultado a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
+}
+
+.section-circuits{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*TEAMS PAGE*/
+
+.main-teams h1 {
+  color: #ffffff;
+  font-size: 3rem;
+}
+
+.main-teams section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+.main-teams img{
+  width: 200px;
+  height: 200px;
+}
+.teams{
+  background-color: #1f262e;
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+
+}
+.teams .img-title{
+  margin: 10px;
+  text-align: center;
+  color: #ffffff;
+}
+.teams .item-texto{
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-align: justify;
+  margin: 10px;
 }
 
 
-.item-resultado2 {
-    display: flex;
-    align-items: center;
-    background: #c2c0c0da;
-    border-radius: 0.6rem;
-    padding: 1rem;
-    margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+
+/*CIRCUITS PAGE*/
+.section-circuits h1 {
+  color: #ffffff;
+  font-size: 3rem;
 }
 
-.item-resultado2 img {
-    height: 200px;
-    width: 200px;
-    border-radius: 0.6rem;
-    margin-right: 16px;
+.container-circuits {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: center;
+  color: #ffffff;
 }
 
-/* Estiliza os títulos dentro dos itens de resultado */
-.item-resultado2 h2 {
-    font-size: 1.5rem;
-    color: #0f5aa5;
-    margin: 0;
+.circuit {
+  display: flex;
+  align-items: center;
+  margin: 1rem;
+  background: linear-gradient(to right, #9A0101,#bd5500);
+  width: 1000px;
+  border-radius: 0.6rem;
+  
+}
+.circuit .img-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  padding: 10px;
 }
 
-/* Estiliza a descrição meta dentro dos itens de resultado */
-.descricao-meta {
-    color: #000000;
-    margin: 0;
+.circuit h2 {
+  margin-bottom: 1rem;
 }
 
-/* Estiliza o rodapé da página */
-footer {
-    background-color: #F5F7F8;
-    color: #45474B;
-    text-align: center;
-    padding: 1rem 0;
-    width: 100%;
-    font-size: 1rem;
-    margin-top: auto;
-    /* Garante que o rodapé fique no final */
+.circuit img {
+  width: 300px;
+  height: 200px;
 }
 
-@media (max-width: 768px) {
-    h1 {
-        font-size: 2rem;
-        letter-spacing: 0.2rem;
-    }
+.circuit div.info {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 10px;
+  width: 550px;
+  background-color: #1f262e;
+  padding: 1rem;
+  border-radius: 0.6rem;
 
-    section input {
-        width: 25rem;
-        padding: 0.8rem;
-    }
-
-    .resultados-pesquisa {
-        width: 40rem;
-        height: 40vh;
-    }
-
-    .item-resultado h2 {
-        font-size: 1.3rem;
-    }
 }
 
-/* Responsividade para celulares */
-@media (max-width: 480px) {
-    .item-resultado {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .item-resultado img {
-        height: 150px;
-        width: 150px;
-        margin-bottom: 1rem;
-    }
-
-    .item-resultado2 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-
-    .item-resultado2 img {
-        height: 150px;
-        width: 150px;
-        margin-bottom: 1rem;
-    }
-
-    section input {
-        width: 90%;
-    }
-
-    section button {
-        padding: 0.6rem 1rem;
-        font-size: 0.9rem;
-    }
-
-    .resultados-pesquisa {
-        width: 100%;
-        height: auto;
-    }
-
-    .item-resultado h2 {
-        font-size: 1.1rem;
-    }
-
-    .item-resultado2 h2 {
-        font-size: 1.1rem;
-    }
-
-    .descricao-meta {
-        font-size: 0.9rem;
-    }
-
-    footer {
-        font-size: 0.9rem;
-        padding: 1rem;
-    }
+.circuit div.info div h3 {
+  font-size: 1rem;
 }
+
+.circuit div.info div p {
+  font-size: 2rem;
+}
+
+.circuit div.info div.lap-record span {
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.circuit div.info div.lap-record {
+  grid-column: 2/4;
+}
+
+
+

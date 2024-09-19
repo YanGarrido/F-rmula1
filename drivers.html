@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <script src="https://kit.fontawesome.com/137f7053a7.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>drivers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="body-drivers">
+  <header>
+    <div class="container">
+      <div class="titulo">
+        <p>Formula 1</p>
+      </div>
+      <div class="menu">
+        <nav>
+          <a href="/index.html">home</a>
+          <a href="/drivers.html">drivers</a>
+          <a href="/teams.html">teams</a>
+          <a href="/circuits.html">circuits</a>
+        </nav>
+      </div> 
+    </div>
+  </header>
+  <main class="main-drivers">
+    <h1>Pilotos da Fórmula 1 </h1>
+    <section>
+      <input type="text" placeholder="Digite o nome do piloto ou equipe" id="campo-pesquisa">
+      <div class="butaos">
+        <div class="butao">
+          <button onclick="pesquisar()">Pesquisar</button>
+        </div>
+      </div>
+    </section>
+    <section class="resultados-pesquisa" id="resultados-pesquisa">
+    </section>
+
+  </main>
+  <footer>
+    <p>Formula 1 - Todos os direitos reservados - 2024</p>
+    <p>Feito por Yan Garrido
+      <span>
+        <a href="https://www.linkedin.com/in/yan-garrido-5b2b19327/"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/YanGarrido"><i class="fa-brands fa-github"></i></a>
+      </span>
+    </p>
+  </footer>
+  <script src="dados.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
